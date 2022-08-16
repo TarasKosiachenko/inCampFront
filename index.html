@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto+Condensed&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</link>
 </head>
 
 <body>
@@ -23,11 +25,11 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li>Home</a></li>
-                    <li>About</a></li>
-                    <li>Skills</a></li>
-                    <li>Resume</a></li>
-                    <li>Contact</a></li>
+                    <li><a href="">Home</a></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +38,11 @@
     <main>
         <section class="personal-info" style="padding-top: 90px;">
             <div class="personal-info-left">
-                <img src="./img/IMG_20210928_180914.jpg" alt="my_photo">
+                <div class="png-file-column">
+                    <img src="./img/IMG_20210928_180914.jpg" alt="my_photo">
+                    <button class="download-button" type="submit" onclick="window.location = './resume/CV - Front-end developer Taras Kosiachenko.pdf';"><b>Download this Resume</b></button>
+                    <span class="fly-icon"><a href="https://interlink-ua.com/ua/"><img src="./img/download.png" alt="imgInterlink"></a></span>
+                </div>
             </div>
             <div class="personal-info-right">
                 <div class="info-header">
@@ -105,7 +111,7 @@
                 </div>
                 <div class="education">
                     <h3>EDUCATION HISTORY</h3>
-                    <p style="padding-bottom: 20px;"><span class="bold-text">University</span> - National Technical University
+                    <p class="education-inst"><span class="bold-text">University</span> - National Technical University
                         "Kharkiv Polytechnic Institute",
                         Masters degree in Computer Engineering,
                         graduated in 2019</p>
@@ -144,7 +150,7 @@
                           <td>Maria Anders</td>
                         </tr>
                         <tr>
-                          <td>Centro comercial Moctezuma</td>
+                          <td>Centro comercial</td>
                           <td>Francisco Chang</td>
                         </tr>
                       </table>
@@ -154,10 +160,30 @@
     </main>
 
     <footer>
-        <div class="footer"> <p>Footer</p></div>
+        <div class="footer">
+            <div class="left">
+                <h2>Contact Me</h2>
+                <p><span class="letter">Email: </span> taras.kosiachenko@gmail.com</p><br>
+                <p style="margin-top: 10px;"><span class="letter">Phone:</span>+38(050)683-38-00</p><br>
+                <p><span class="letter">GitHub:</span><a href="https://github.com/TarasKosiachenko">
+                    <i class='fab fa-github fa-2x' style="color: #cdcdcd;"></i><br/>
+                    <!-- <i class="fab fa-github-square" style="font-size: 2.5em; color: #919191;"></i> -->
+                </a></p>
+            </div>
+            <div class="right">
+                <form name="test" method="post" action="input1.php">
+                <p><b>Name *</b></p>
+                <input type="text" size="100">
+                <p><b>Email Address *</b></p>
+                <input type="text" size="100">
+                <p><b>Message *</b></p>
+                <textarea name="comment" cols="40" rows="3"></textarea><br>
+                <button class="footerbutton" type="button">Contact Me</button>
+                <button class="footerbutton" type="reset">Clear</button>
+               </form>
+            </div>
+        </div>
     </footer>
-
-    <span class="fly-icon"><img src="./img/download.png" alt="imgInterlink"></span>
 
     <script src="./main.js"></script>
 </body>

@@ -37,7 +37,7 @@ a {
 }
 
 .header__body {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0px auto;
   padding: 0px 30px;
   color: #fff;
@@ -85,7 +85,7 @@ a {
 }
 
 .personal-info {
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -93,7 +93,7 @@ a {
 }
 
 .personal-info-left {
-  width: 40%;
+  width: 30%;
 }
 .png-file-column {
   position: relative;
@@ -134,8 +134,12 @@ a {
   color: rgb(240, 240, 240);
 }
 
+.info-left-second ul {
+  list-style: circle;
+}
+
 .personal-info-right {
-  width: 60%;
+  width: 70%;
   margin-left: 30px;
 }
 
@@ -408,14 +412,20 @@ h3 {
   }
 }
 
-.footer {
+footer {
   background: #304145;
+}
+.footer {
+  max-width: 900px;
+  margin: auto;
   display: flex;
   height: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5% 5%;
 }
-
+.footer .left {
+  width: 30%;
+}
 .footer .left h2 {
   padding-bottom: 50px;
   color: #fff;
@@ -427,7 +437,8 @@ h3 {
 }
 .right {
   font-family: "Lato", sans-serif;
-  width: 50%;
+  width: 70%;
+  margin-left: 30px;
 }
 .right p {
   color: #fff;
@@ -436,12 +447,12 @@ h3 {
 .right input {
   background: #4b595c;
   height: 30px;
-  width: 80%;
+  width: 100%;
 }
 .right textarea {
   background: #4b595c;
   height: 145px;
-  width: 80%;
+  width: 100%;
 }
 .letter {
   color: #fff;

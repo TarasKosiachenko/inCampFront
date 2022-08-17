@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 .bold-text {
@@ -154,7 +155,7 @@ a {
 }
 
 .info-header h1 {
-    font-size: calc(16px + 15 * (100vw / 1280));
+    font-size: 27px;
     white-space: nowrap;
     padding-bottom: 10px;
     font-family: "Roboto Condensed", sans-serif;
@@ -167,7 +168,6 @@ a {
 
 .contacts {
     padding-bottom: 30px;
-    border-bottom: 1px solid;
 }
 
 h3 {
@@ -182,16 +182,25 @@ h3 {
 .contacts-list {
     list-style: none;
     display: grid;
-    grid-template-columns: 90px auto;
+    /* grid-template-columns: 90px auto; */
 }
 
 .contacts-list p {
     font-weight: bold;
+    text-align: left;
+    width: 85px;
 }
 
 .personal-info ul {
     padding-left: 30px;
     line-height: 25px;
+}
+
+.contacts-list {
+    display: table;
+}
+.contacts-list li {
+    display: flex;
 }
 
 .work-experience {
@@ -383,7 +392,6 @@ h3 {
     .info-left-second ul {
         list-style: none;
     }
-
     .list-other-skils {
         padding-bottom: 30px;
         border-bottom: 1px solid;
@@ -442,6 +450,25 @@ h3 {
         margin: auto;
     }
 }
+@media (max-width: 365px) {
+    .contacts-list li {
+        display: block;
+        text-align: center;
+    }
+    .contacts-list p {
+        margin: auto;
+        text-align: center;
+    }
+    .contacts-list-footer li {
+        display: block !important;
+        height: 60px !important;
+    }
+    .footer .left p {
+        display: block;
+        width: max-content;
+        padding-bottom: 5px;
+    }
+}
 
 footer {
     background: #304145;
@@ -467,10 +494,20 @@ footer {
 
 .footer .left span {
     word-break: normal;
+    color: #fff;
+}
+
+.contacts-list-footer {
+    margin: auto;
+}
+.contacts-list-footer li {
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .footer .left p {
-    color: #cdcdcd;
+    color: #fff;
     display: flex;
     align-items: center;
     word-break: break-all;
@@ -497,11 +534,6 @@ footer {
     background: #4b595c;
     height: 145px;
     width: 100%;
-}
-
-.letter {
-    color: #fff;
-    margin-right: 10%;
 }
 
 input,

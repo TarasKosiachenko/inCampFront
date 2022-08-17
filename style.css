@@ -28,6 +28,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
+    border-bottom: 1px solid #fff;
     background-color: #304145;
     z-index: 2;
 }
@@ -108,6 +109,7 @@ a {
     float: left;
     border-radius: 20px;
 }
+
 .fly-icon img {
     border-radius: 100%;
 }
@@ -199,6 +201,7 @@ h3 {
 .contacts-list {
     display: table;
 }
+
 .contacts-list li {
     display: flex;
 }
@@ -327,7 +330,7 @@ h3 {
         position: fixed;
         top: -100%;
         right: 0%;
-        min-width: 25%;
+        min-width: 100%;
         height: auto;
         overflow: auto;
         transition: all 0.5s ease 0s;
@@ -392,6 +395,7 @@ h3 {
     .info-left-second ul {
         list-style: none;
     }
+
     .list-other-skils {
         padding-bottom: 30px;
         border-bottom: 1px solid;
@@ -450,19 +454,23 @@ h3 {
         margin: auto;
     }
 }
+
 @media (max-width: 365px) {
     .contacts-list li {
         display: block;
         text-align: center;
     }
+
     .contacts-list p {
         margin: auto;
         text-align: center;
     }
+
     .contacts-list-footer li {
         display: block !important;
         height: 60px !important;
     }
+
     .footer .left p {
         display: block;
         width: max-content;
@@ -500,6 +508,7 @@ footer {
 .contacts-list-footer {
     margin: auto;
 }
+
 .contacts-list-footer li {
     height: 30px;
     display: flex;
